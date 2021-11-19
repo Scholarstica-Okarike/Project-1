@@ -25,7 +25,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
   - name: Install required system packages
     apt: name={{ item }} state=latest update_cache=yes
-    loop: [ 'apt-transport-https', 'containerd', 'docker.io', 'software-properties-common', 'python3-pip', 'virtualenv', 'py>
+    loop: [ 'apt-transport-https', 'containerd', 'docker.io', 'python3-pip', 'virtualenv', 'py']
 
   - name: Make sure docker is running on startup
     systemd:
